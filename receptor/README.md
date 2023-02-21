@@ -28,4 +28,7 @@ Features: S-BUS output CPPM output Lighter weight and physically smaller than X4
 
 More number of channels:1-16CH from SBUS channel, 1-8ch from CPPM Channel
 
-Package Included:
+
+[![](figura1.jpg)1(#)
+
+[![](figura2.jpg)1(#)
