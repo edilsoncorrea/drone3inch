@@ -48,3 +48,6 @@ IMPORTANT
 3. The maximum current of output DC 5V is 300mA.
 
 
+[![](pinagem.jpg)1(#)
+
+[![](tabela_canais.jpg)1(#)
