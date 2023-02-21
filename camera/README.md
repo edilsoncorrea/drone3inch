@@ -18,3 +18,7 @@
 ### The difference with F1: has microphone
 
 [![](figura1.jpg)1(#)
+
+[![](figura2.jpg)1(#)
+
+[![](figura3.jpg)1(#)
