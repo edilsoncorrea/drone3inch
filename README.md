@@ -15,6 +15,6 @@
 
 [Documentação da câmera Caddx](https://github.com/edilsoncorrea/drone3inch/blob/main/camera/README.md)
 
-[Documentação do frame](https://github.com/edilsoncorrea/drone3inch/blob/main/receptor/README.md)
+[Documentação do frame](https://github.com/edilsoncorrea/drone3inch/blob/main/frame/README.md)
 
 
