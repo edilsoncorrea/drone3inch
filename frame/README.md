@@ -12,7 +12,7 @@ Column height:20mm.
 Weight: 31g/2.5 inch(Different production batches will vary ).
 Material: 3K Carbon Fiber.
 
-##Recommend Parts:
+## Recommend Parts:
 Flight Controller: Tower System/Kiss/F4/F7(Hole distance:20*20mm/25.5*25.5/26.5*26.5).
 Motor: 11XX/12XX...Brushless Motor(Hole distance:9*9mm).
 ESC: 10-100A Brushless ESC.
