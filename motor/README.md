@@ -31,3 +31,9 @@ Mounting: 9x9mm/M2
 [![](figura1.jpg)1(#)
 
 [![](figura2.jpg)1(#)
+
+[![](figura3.jpg)1(#)
+
+[![](figura4.jpg)1(#)
+
+[![](figura5.jpg)1(#)
