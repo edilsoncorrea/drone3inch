@@ -10,3 +10,5 @@
 [Documentações do VTX](https://github.com/edilsoncorrea/drone3inch/blob/main/vtx/README.md)
 
 [Documentação dos motores](https://github.com/edilsoncorrea/drone3inch/blob/main/motor/README.md)
+
+[Documentação do receptor](https://github.com/edilsoncorrea/drone3inch/blob/main/receptor/README.md)
