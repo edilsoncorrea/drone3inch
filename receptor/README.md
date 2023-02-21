@@ -32,3 +32,5 @@ More number of channels:1-16CH from SBUS channel, 1-8ch from CPPM Channel
 [![](figura1.jpg)1(#)
 
 [![](figura2.jpg)1(#)
+
+[![](figura3.jpg)1(#)
