@@ -17,4 +17,6 @@
 
 [Documentação do frame](https://github.com/edilsoncorrea/drone3inch/blob/main/frame/README.md)
 
+[Documentação da flight controller](https://github.com/edilsoncorrea/drone3inch/blob/main/flightcontroller/README.md)
+
 
