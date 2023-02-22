@@ -28,12 +28,12 @@ Rated Voltage (Lipo): 3-4S
 
 Mounting: 9x9mm/M2
 
-[![](figura1.jpg)1(#)
+![](figura1.jpg)
 
-[![](figura2.jpg)1(#)
+![](figura2.jpg)
 
-[![](figura3.jpg)1(#)
+![](figura3.jpg)
 
-[![](figura4.jpg)1(#)
+![](figura4.jpg)
 
-[![](figura5.jpg)1(#)
+![](figura5.jpg)
