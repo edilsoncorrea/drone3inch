@@ -1,12 +1,12 @@
 # Documentação para o VTX EWRF-e7092TM
 
-[![](figura1.jpg)1(#)
+![](figura1.jpg)
 
 
-[![](figura2.jpg)1(#)
+![](figura2.jpg)
 
 
-[![](figura3.jpg)1(#)
+![](figura3.jpg)
 
 
 ## User Guide
@@ -48,6 +48,6 @@ IMPORTANT
 3. The maximum current of output DC 5V is 300mA.
 
 
-[![](pinagem.jpg)1(#)
+![](pinagem.jpg)
 
-[![](tabela_canais.jpg)1(#)
+![](tabela_canais.jpg)
