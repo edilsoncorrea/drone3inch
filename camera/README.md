@@ -2,9 +2,9 @@
 
 ![](figura1.jpg)
 
-[![](figura2.jpg)1(#)
+![](figura2.jpg)
 
-[![](figura3.jpg)1(#)
+![](figura3.jpg)
 
 ## Feature:
 1. Image sensor: 1/3" CMOS sensor
