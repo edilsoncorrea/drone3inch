@@ -1,10 +1,10 @@
 # CADDX Turbo Micro F2 1/3" CMOS 2.1mm 1200TVL FPV Camera 16:9/4:3 NTSC/PAL with Microphone Low Latency 4.5g Micro Camera VS F1
 
-[![](figura1.jpg)1(#)
+![](figura1.jpg)
 
-[![](figura2.jpg)1(#)
+![](figura2.jpg)
 
-[![](figura3.jpg)1(#)
+![](figura3.jpg)
 
 ## Feature:
 1. Image sensor: 1/3" CMOS sensor

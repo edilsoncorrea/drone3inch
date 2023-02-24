@@ -1,6 +1,6 @@
 # Baby APEX 2.5/3inch Frame Kit RC Drone FPV Racing Quadcopter support Caddx Polar/Nebula Nano 1103 1104 1106 1204 Brushless Motor
 
-[![](figura1.jpg)1(#)
+![](figura1.jpg)
 
 ## Specification:
 Brand Name: AlfaRC.
@@ -20,10 +20,10 @@ Propeller: 115(2.5 inch)/132(3 inch).
 Battery: 2/6S Lipo Battery.
 Support camera: Nano series FPV camera/14MM.
 
-[![](figura2.jpg)1(#)
+![](figura2.jpg)
 
-[![](figura3.jpg)1(#)
+![](figura3.jpg)
 
-[![](figura4.jpg)1(#)
+![](figura4.jpg)
 
-[![](figura5.jpg)1(#)
+![](figura5.jpg)
