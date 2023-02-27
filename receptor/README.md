@@ -35,4 +35,8 @@ More number of channels:1-16CH from SBUS channel, 1-8ch from CPPM Channel
 
 ![](figura3.jpg)
 
+
+## Documentações sobre a atualização do Frysky XSR para funcionar com FPort
 [FrSky Receiver Firmware Update | R-XSR LUA SCRIPT FIX](https://www.youtube.com/watch?v=9fMSR57sFkM)
+
+[Flash Frsky Receiver Firmware: R9 Mini, R-XSR, XSR, X4R, XM+, D4R](https://oscarliang.com/flash-frsky-rx-firmware/)
