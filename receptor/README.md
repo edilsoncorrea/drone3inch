@@ -34,3 +34,5 @@ More number of channels:1-16CH from SBUS channel, 1-8ch from CPPM Channel
 ![](figura2.jpg)
 
 ![](figura3.jpg)
+
+[FrSky Receiver Firmware Update | R-XSR LUA SCRIPT FIX](https://www.youtube.com/watch?v=9fMSR57sFkM)
