@@ -98,8 +98,17 @@ feature -RX_PARALLEL_PWM
 feature -AIRMODE
 feature RX_SERIAL
 feature MOTOR_STOP
-feature LED_STRIP
+feature TELEMETRY
 feature OSD
+
+# serial
+serial 0 64 115200 57600 0 115200
+
+# beeper
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -GPS_STATUS
+beeper -RX_SET
 
 # led
 led 0 4,6::CB:8
@@ -107,15 +116,25 @@ led 1 5,6::CB:8
 led 2 6,6::CB:8
 led 3 7,6::CB:8
 
+# aux
+aux 0 0 0 1775 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1775 2100 0 0
+aux 3 13 4 1300 2100 0 0
+aux 4 28 2 1300 1700 0 0
+
 # master
 set dyn_notch_count = 1
 set dyn_notch_q = 500
+set acc_calibration = 75,-72,19,1
 set mag_bustype = I2C
 set mag_i2c_device = 1
 set mag_hardware = NONE
 set baro_bustype = I2C
 set baro_i2c_device = 1
-set serialrx_provider = SBUS
+set rssi_channel = 16
+set serialrx_provider = FPORT
+set serialrx_halfduplex = ON
 set blackbox_device = SPIFLASH
 set dshot_burst = ON
 set dshot_bidir = ON
@@ -125,10 +144,19 @@ set battery_meter = ADC
 set ibata_scale = 170
 set beeper_inversion = ON
 set beeper_od = OFF
-set osd_vbat_pos = 14571
-set osd_ah_sbar_pos = 14542
-set osd_ah_pos = 14414
-set osd_current_pos = 14634
+set osd_alt_alarm = 40
+set osd_vbat_pos = 226
+set osd_rssi_pos = 14520
+set osd_flymode_pos = 14379
+set osd_current_pos = 14770
+set osd_mah_drawn_pos = 14615
+set osd_warnings_pos = 14697
+set osd_avg_cell_voltage_pos = 14763
+set osd_battery_usage_pos = 14384
+set osd_disarmed_pos = 14602
+set osd_core_temp_pos = 14456
+set osd_efficiency_pos = 14646
+set osd_profile = 2
 set system_hse_mhz = 8
 set max7456_spi_bus = 3
 set dashboard_i2c_bus = 1
