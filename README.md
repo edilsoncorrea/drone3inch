@@ -12,4 +12,6 @@
 
 [Documentação da flight controller](https://github.com/edilsoncorrea/drone3inch/blob/main/flightcontroller/README.md)
 
+[Esc Configurator](https://esc-configurator.com/)
+
 
