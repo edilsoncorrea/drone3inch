@@ -1,4 +1,6 @@
-diff all
+# 
+
+# diff all
 ###WARNING: NO CUSTOM DEFAULTS FOUND###
 
 # version
@@ -168,7 +170,8 @@ set simplified_gyro_filter_multiplier = 55
 set osd_warn_rssi = ON
 set osd_alt_alarm = 40
 set osd_vbat_pos = 226
-set osd_rssi_pos = 14520
+set osd_rssi_pos = 14519
+set osd_link_quality_pos = 14523
 set osd_tim_1_pos = 14785
 set osd_tim_2_pos = 14721
 set osd_remaining_time_estimate_pos = 14743
@@ -176,12 +179,14 @@ set osd_flymode_pos = 14380
 set osd_vtx_channel_pos = 14369
 set osd_current_pos = 14803
 set osd_mah_drawn_pos = 14615
+set osd_altitude_pos = 30785
 set osd_warnings_pos = 14729
 set osd_avg_cell_voltage_pos = 14795
 set osd_battery_usage_pos = 14384
 set osd_disarmed_pos = 14571
 set osd_core_temp_pos = 14455
 set osd_efficiency_pos = 14678
+set osd_stat_total_time = ON
 set osd_profile = 2
 set system_hse_mhz = 8
 set vtx_band = 6
