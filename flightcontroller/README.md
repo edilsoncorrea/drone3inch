@@ -7,3 +7,7 @@
 ![](figura1.jpg)
 
 ![](figura2.jpg)
+
+![](figura3.jpg)
+
+![](figura4.jpg)
