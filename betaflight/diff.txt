@@ -102,6 +102,7 @@ dma pin A09 0
 feature -RX_PARALLEL_PWM
 feature -AIRMODE
 feature RX_SERIAL
+feature TELEMETRY
 feature OSD
 
 # serial
@@ -111,7 +112,6 @@ serial 5 2048 115200 57600 0 115200
 # beeper
 beeper -RX_LOST_LANDING
 beeper -GPS_STATUS
-beeper -RX_SET
 beeper -ON_USB
 
 # led
@@ -146,43 +146,50 @@ set dyn_notch_count = 1
 set dyn_notch_q = 500
 set gyro_lpf1_dyn_min_hz = 137
 set gyro_lpf1_dyn_max_hz = 275
-set acc_calibration = 75,-72,19,1
+set acc_trim_pitch = 5
+set acc_trim_roll = 2
+set acc_calibration = 43,19,21,1
 set mag_bustype = I2C
 set mag_i2c_device = 1
 set mag_hardware = NONE
 set baro_bustype = I2C
 set baro_i2c_device = 1
-set rssi_channel = 16
+set rssi_channel = 8
 set serialrx_provider = FPORT
 set serialrx_halfduplex = ON
 set blackbox_device = SPIFLASH
 set dshot_burst = ON
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
-set bat_capacity = 700
+set bat_capacity = 850
+set vbat_warning_cell_voltage = 340
 set current_meter = ADC
 set battery_meter = ADC
-set ibata_scale = 170
+set vbat_scale = 113
+set ibata_scale = 78
 set beeper_inversion = ON
 set beeper_od = OFF
 set simplified_gyro_filter_multiplier = 55
 set osd_warn_rssi = ON
 set osd_rssi_alarm = 45
 set osd_cap_alarm = 600
-set osd_alt_alarm = 40
+set osd_alt_alarm = 25
+set osd_tim1 = 1536
+set osd_tim2 = 2049
 set osd_vbat_pos = 97
 set osd_rssi_pos = 14519
-set osd_link_quality_pos = 14523
+set osd_link_quality_pos = 187
+set osd_rssi_dbm_pos = 215
 set osd_tim_1_pos = 14785
 set osd_tim_2_pos = 14721
-set osd_remaining_time_estimate_pos = 14743
+set osd_remaining_time_estimate_pos = 14711
 set osd_flymode_pos = 14380
 set osd_vtx_channel_pos = 14369
 set osd_current_pos = 14646
-set osd_mah_drawn_pos = 14806
+set osd_mah_drawn_pos = 14775
 set osd_altitude_pos = 30817
 set osd_warnings_pos = 14729
-set osd_avg_cell_voltage_pos = 14795
+set osd_avg_cell_voltage_pos = 14763
 set osd_battery_usage_pos = 14384
 set osd_disarmed_pos = 14602
 set osd_core_temp_pos = 14455
@@ -194,7 +201,7 @@ set osd_profile = 2
 set system_hse_mhz = 8
 set vtx_band = 4
 set vtx_channel = 3
-set vtx_power = 2
+set vtx_power = 3
 set vtx_freq = 5780
 set max7456_spi_bus = 3
 set dashboard_i2c_bus = 1
@@ -254,7 +261,7 @@ rateprofile 4
 rateprofile 5
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 1
 
 # save configuration
 save
