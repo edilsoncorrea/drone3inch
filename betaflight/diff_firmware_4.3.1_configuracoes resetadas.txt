@@ -1,0 +1,50 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F405 (S405) 4.3.1 Jul 13 2022 / 03:25:08 (8d4f00532) MSP API: 1.44
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name JHEF405PRO
+manufacturer_id JHEF
+mcu_id 003f001d3331511930333731
+signature 
+
+# feature
+feature -RX_PARALLEL_PWM
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
