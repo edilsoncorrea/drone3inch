@@ -1,11 +1,12 @@
 # 
 
 # diff all
-###WARNING: NO CUSTOM DEFAULTS FOUND###
 
 # version
-# Betaflight / STM32F405 (S405) 4.3.1 Jul 13 2022 / 03:32:11 (8d4f005) MSP API: 1.44
-###ERROR IN diff: NO CONFIG FOUND###
+# Betaflight / STM32F405 (S405) 4.4.1 May 23 2023 / 23:16:43 (e43d591b2) MSP API: 1.45
+
+# config: YES
+
 # start the command batch
 batch start
 
@@ -19,91 +20,10 @@ signature
 
 # name: GHF405AIO-ICM
 
-# resources
-resource BEEPER 1 C13
-resource MOTOR 1 B00
-resource MOTOR 2 B01
-resource MOTOR 3 A03
-resource MOTOR 4 A02
-resource PPM 1 B08
-resource LED_STRIP 1 A09
-resource SERIAL_TX 1 B06
-resource SERIAL_TX 2 D05
-resource SERIAL_TX 3 B10
-resource SERIAL_TX 4 A00
-resource SERIAL_TX 6 C06
-resource SERIAL_RX 1 A10
-resource SERIAL_RX 2 D06
-resource SERIAL_RX 3 B11
-resource SERIAL_RX 4 A01
-resource SERIAL_RX 6 C07
-resource I2C_SCL 1 B08
-resource I2C_SDA 1 B09
-resource LED 1 C14
-resource SPI_SCK 1 A05
-resource SPI_SCK 3 C10
-resource SPI_MISO 1 A06
-resource SPI_MISO 3 C11
-resource SPI_MOSI 1 A07
-resource SPI_MOSI 3 C12
-resource ESCSERIAL 1 B08
-resource ADC_BATT 1 C03
-resource ADC_RSSI 1 C00
-resource ADC_CURR 1 C02
-resource FLASH_CS 1 B03
-resource OSD_CS 1 B14
-resource GYRO_EXTI 1 B13
-resource GYRO_CS 1 B12
-resource USB_DETECT 1 A08
-
-# timer
-timer B00 AF2
-# pin B00: TIM3 CH3 (AF2)
-timer B01 AF2
-# pin B01: TIM3 CH4 (AF2)
-timer A03 AF1
-# pin A03: TIM2 CH4 (AF1)
-timer A02 AF1
-# pin A02: TIM2 CH3 (AF1)
-timer B05 AF2
-# pin B05: TIM3 CH2 (AF2)
-timer B07 AF2
-# pin B07: TIM4 CH2 (AF2)
-timer C09 AF3
-# pin C09: TIM8 CH4 (AF3)
-timer C08 AF3
-# pin C08: TIM8 CH3 (AF3)
-timer A09 AF1
-# pin A09: TIM1 CH2 (AF1)
-
-# dma
-dma ADC 1 0
-# ADC 1: DMA2 Stream 0 Channel 0
-dma pin B00 0
-# pin B00: DMA1 Stream 7 Channel 5
-dma pin B01 0
-# pin B01: DMA1 Stream 2 Channel 5
-dma pin A03 1
-# pin A03: DMA1 Stream 6 Channel 3
-dma pin A02 0
-# pin A02: DMA1 Stream 1 Channel 3
-dma pin B05 0
-# pin B05: DMA1 Stream 5 Channel 5
-dma pin B07 0
-# pin B07: DMA1 Stream 3 Channel 2
-dma pin C09 0
-# pin C09: DMA2 Stream 7 Channel 7
-dma pin C08 0
-# pin C08: DMA2 Stream 2 Channel 0
-dma pin A09 0
-# pin A09: DMA2 Stream 6 Channel 0
-
 # feature
-feature -RX_PARALLEL_PWM
+feature -TELEMETRY
 feature -AIRMODE
-feature RX_SERIAL
 feature GPS
-feature OSD
 
 # serial
 serial 0 64 115200 57600 0 115200
@@ -111,20 +31,13 @@ serial 3 2 115200 115200 0 115200
 serial 5 2048 115200 57600 0 115200
 
 # beeper
-beeper -RX_LOST_LANDING
 beeper -ON_USB
-
-# led
-led 0 4,6::CB:8
-led 1 5,6::CB:8
-led 2 6,6::CB:8
-led 3 7,6::CB:8
 
 # aux
 aux 0 0 0 1700 2100 0 0
 aux 1 1 1 1200 2100 0 0
 aux 2 13 4 1400 2100 0 0
-aux 3 28 2 1300 1700 0 0
+aux 3 28 2 1425 2100 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -146,86 +59,60 @@ set dyn_notch_count = 1
 set dyn_notch_q = 500
 set gyro_lpf1_dyn_min_hz = 137
 set gyro_lpf1_dyn_max_hz = 275
-set acc_trim_pitch = 5
-set acc_trim_roll = 2
-set acc_calibration = 43,19,21,1
-set mag_bustype = I2C
-set mag_i2c_device = 1
-set mag_hardware = NONE
-set baro_bustype = I2C
-set baro_i2c_device = 1
+set acc_calibration = 24,2,19,1
 set rssi_channel = 8
 set serialrx_provider = FPORT
 set serialrx_halfduplex = ON
-set blackbox_device = SPIFLASH
-set dshot_burst = ON
 set dshot_bidir = ON
-set motor_pwm_protocol = DSHOT600
 set bat_capacity = 850
-set vbat_warning_cell_voltage = 340
-set current_meter = ADC
-set battery_meter = ADC
 set vbat_scale = 113
 set ibata_scale = 78
-set beeper_inversion = ON
-set beeper_od = OFF
-set gps_provider = UBLOX
 set gps_sbas_mode = AUTO
+set gps_auto_baud = ON
 set gps_ublox_use_galileo = ON
 set gps_set_home_point_once = ON
 set simplified_gyro_filter_multiplier = 55
-set osd_warn_rssi = ON
+set osd_warn_bitmask = 49151
 set osd_rssi_alarm = 45
 set osd_cap_alarm = 600
-set osd_alt_alarm = 25
+set osd_alt_alarm = 30
 set osd_tim1 = 1536
 set osd_tim2 = 2049
 set osd_vbat_pos = 97
-set osd_rssi_pos = 14519
+set osd_rssi_pos = 14489
 set osd_link_quality_pos = 187
-set osd_rssi_dbm_pos = 215
-set osd_tim_1_pos = 14785
+set osd_tim_1_pos = 14721
 set osd_tim_2_pos = 14721
-set osd_remaining_time_estimate_pos = 14711
+set osd_remaining_time_estimate_pos = 14743
 set osd_flymode_pos = 14380
-set osd_vtx_channel_pos = 14419
-set osd_current_pos = 14646
-set osd_mah_drawn_pos = 14775
+set osd_vtx_channel_pos = 14387
+set osd_current_pos = 14645
+set osd_mah_drawn_pos = 14679
 set osd_gps_speed_pos = 14497
-set osd_gps_lon_pos = 30753
-set osd_gps_lat_pos = 30785
+set osd_gps_lon_pos = 30785
+set osd_gps_lat_pos = 30753
 set osd_gps_sats_pos = 14412
 set osd_home_dist_pos = 14465
 set osd_altitude_pos = 30817
-set osd_warnings_pos = 14729
-set osd_avg_cell_voltage_pos = 14763
-set osd_battery_usage_pos = 14384
+set osd_warnings_pos = 14697
+set osd_avg_cell_voltage_pos = 14731
+set osd_battery_usage_pos = 47192
 set osd_disarmed_pos = 14602
 set osd_core_temp_pos = 14455
 set osd_efficiency_pos = 342
-set osd_stat_endbatt = ON
-set osd_stat_battery = ON
-set osd_stat_total_time = ON
-set osd_profile = 2
-set system_hse_mhz = 8
+set osd_stat_bitmask = 6305724
+set osd_canvas_height = 13
 set vtx_band = 4
 set vtx_channel = 3
 set vtx_power = 3
 set vtx_freq = 5780
-set max7456_spi_bus = 3
-set dashboard_i2c_bus = 1
-set pinio_box = 40,41,255,255
-set flash_spi_bus = 3
-set gyro_1_bustype = SPI
-set gyro_1_spibus = 1
-set gyro_1_sensor_align = CW180
-set gyro_1_align_yaw = 1800
-set gyro_2_spibus = 1
-set name = GHF405AIO-ICM
+set craft_name = GHF405AIO-ICM
+set pilot_name = Edilson
 
 profile 0
 
 # profile 0
+set profile_name = Fabrica
 set dterm_lpf1_dyn_min_hz = 60
 set dterm_lpf1_dyn_max_hz = 120
 set dterm_lpf1_static_hz = 60
@@ -245,19 +132,12 @@ profile 1
 
 profile 2
 
+profile 3
+
 # restore original profile selection
 profile 0
 
 rateprofile 0
-
-# rateprofile 0
-set rates_type = BETAFLIGHT
-set roll_rc_rate = 100
-set pitch_rc_rate = 100
-set yaw_rc_rate = 100
-set roll_srate = 70
-set pitch_srate = 70
-set yaw_srate = 70
 
 rateprofile 1
 
@@ -265,12 +145,8 @@ rateprofile 2
 
 rateprofile 3
 
-rateprofile 4
-
-rateprofile 5
-
 # restore original rateprofile selection
-rateprofile 1
+rateprofile 0
 
 # save configuration
 save
