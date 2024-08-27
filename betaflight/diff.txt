@@ -3,7 +3,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F405 (S405) 4.4.1 May 23 2023 / 23:16:43 (e43d591b2) MSP API: 1.45
+# Betaflight / STM32F405 (S405) 4.4.2 Jun  6 2023 / 01:32:56 (23d066d08) MSP API: 1.45
 
 # config: YES
 
@@ -64,13 +64,14 @@ set rssi_channel = 8
 set serialrx_provider = FPORT
 set serialrx_halfduplex = ON
 set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
 set bat_capacity = 850
 set vbat_scale = 113
 set ibata_scale = 78
 set gps_sbas_mode = AUTO
-set gps_auto_baud = ON
+set gps_auto_config = OFF
 set gps_ublox_use_galileo = ON
-set gps_set_home_point_once = ON
+set pid_process_denom = 2
 set simplified_gyro_filter_multiplier = 55
 set osd_warn_bitmask = 49151
 set osd_rssi_alarm = 45
