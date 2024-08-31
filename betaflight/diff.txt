@@ -3,9 +3,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F405 (S405) 4.4.2 Jun  6 2023 / 01:32:56 (23d066d08) MSP API: 1.45
-
-# config: YES
+# Betaflight / STM32F405 (S405) 4.5.1 Aug 27 2024 / 00:41:39 (77d01ba3b) MSP API: 1.46
+# config rev: 20a123a
 
 # start the command batch
 batch start
@@ -21,9 +20,9 @@ signature
 # name: GHF405AIO-ICM
 
 # feature
-feature -TELEMETRY
 feature -AIRMODE
 feature GPS
+feature OSD
 
 # serial
 serial 0 64 115200 57600 0 115200
@@ -61,15 +60,12 @@ set gyro_lpf1_dyn_min_hz = 137
 set gyro_lpf1_dyn_max_hz = 275
 set acc_calibration = 24,2,19,1
 set rssi_channel = 8
-set serialrx_provider = FPORT
-set serialrx_halfduplex = ON
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set bat_capacity = 850
 set vbat_scale = 113
 set ibata_scale = 78
 set gps_sbas_mode = AUTO
-set gps_auto_config = OFF
 set gps_ublox_use_galileo = ON
 set pid_process_denom = 2
 set simplified_gyro_filter_multiplier = 55
