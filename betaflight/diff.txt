@@ -26,10 +26,11 @@ feature OSD
 
 # serial
 serial 0 64 115200 57600 0 115200
-serial 3 2 115200 115200 0 115200
+serial 2 2 115200 115200 0 115200
 serial 5 2048 115200 57600 0 115200
 
 # beeper
+beeper -READY_BEEP
 beeper -ON_USB
 
 # aux
@@ -58,7 +59,7 @@ set dyn_notch_count = 1
 set dyn_notch_q = 500
 set gyro_lpf1_dyn_min_hz = 137
 set gyro_lpf1_dyn_max_hz = 275
-set acc_calibration = 24,2,19,1
+set acc_calibration = 20,-28,22,1
 set rssi_channel = 8
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
@@ -103,6 +104,8 @@ set vtx_band = 4
 set vtx_channel = 3
 set vtx_power = 3
 set vtx_freq = 5780
+set gyro_1_sensor_align = CW180
+set gyro_1_align_yaw = 1800
 set craft_name = GHF405AIO-ICM
 set pilot_name = Edilson
 
